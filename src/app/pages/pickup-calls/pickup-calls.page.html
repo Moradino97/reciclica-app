@@ -8,60 +8,13 @@
 </ion-header>
 
 <ion-content>
-  <ion-card>
-    <ion-card-content>
-      <ion-item lines="none">
-        <ion-icon name="hourglass-outline" slot="start" color="warning"></ion-icon>
-        <ion-label>
-          On hold
-          <p>15/12/2022 13:00:00</p>
-        </ion-label>
-      </ion-item>
-      <ion-item lines="none">
-        <ion-label>
-          <p>Created at 21/04/2022</p>
-          <p>Notes: we have two bags that are full, one with plastic and the other one with glasses</p>
-        </ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
+  <app-pickup-call-card  status="hold" updatedAt="23/12/2022 01:33" createdAt="22/12/2022 01:33" 
+  notes="we have two bags that are full, one with plastic and the other one with glasses"> </app-pickup-call-card>
+  
+  <app-pickup-call-card  status="processing" updatedAt="23/12/2022 01:33" createdAt="22/12/2022 01:33" 
+  notes="we have two bags that are full, one with plastic and the other one with glasses"></app-pickup-call-card>
 
-  <ion-card>
-    <ion-card-content>
-      <ion-item lines="none">
-        <ion-icon name="archive-outline" slot="start" color="secondary"></ion-icon>
-        <ion-label>
-          Processing
-          <p>15/12/2022 13:00:00</p>
-        </ion-label>
-      </ion-item>
-      <ion-item lines="none">
-        <ion-label>
-          <p>Created at 21/04/2022</p>
-          <p>Notes: we have two bags that are full, one with plastic and the other one with glasses</p>
-        </ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card>
-    <ion-card-content>
-      <ion-item lines="none">
-        <ion-icon name="checkmark-circle-outline" slot="start" color="primary"></ion-icon>
-        <ion-label>
-          Finshed
-          <p>15/12/2022 13:00:00</p>
-        </ion-label>
-      </ion-item>
-      <ion-item lines="none">
-        <ion-label>
-          <p>Created at 21/04/2022</p>
-        </ion-label>
-      </ion-item>
-      <ion-item lines="none">
-        <ion-icon name="trophy" slot="start" color="success"></ion-icon>
-        <ion-label color="success"> $ 15,00</ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
+  <app-pickup-call-card status="finished" updatedAt="23/12/2022 01:33" createdAt="22/12/2022 01:33" 
+value="$ 15,00"></app-pickup-call-card>
+ 
 </ion-content>
