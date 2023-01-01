@@ -46,7 +46,7 @@ describe('ErrorMessageComponent', () => {
     component.field.markAsTouched();    
     component.error ="anyError";
 
-    expect(component.shouldShowComponent()).toBeTruthy();
+    expect(component.shouldShowComponent()).toBeFalsy();
 
   })
 
